@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Senhas Coloridas</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Jogo de Senha</h1>
+    <main class="tela-principal">
+        <section id="regras">
+                <p>Pressione o botão reset para iniciar um novo jogo.<br/>
+                    Escolha 4 de 6 cores diponíveis clicando nas lacunas,
+                    depois pressione verificar para testar a senha escolhida.<br/>
+                    Será apresentado os seguintes resultados:</p>
+                    <ul-->
+                        <li>Acertou a cor;</li>
+                        <li>Acertou a cor, mas a posição está errada;</li>
+                        <li>Errou a cor e suaposição</li>
+                    </ul-->
+        </section>
+        <section id="game">
+            <div class="btn">
+                <button id="btnLimpar">Limpar</button>
+                <button id="btnVerificar">Verificar</button>
+            </div>
+            <div id="senha-oculta">
+                <h3>Senha Oculta</h3>
+                <div id="gerado"> 
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+            </div>
+            <div id="tentativas">
+                <h3>Tentativas</h3>
+                <div id="gerado">
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                    <div class="bola"></div>
+                </div>
+            </div>
+        </section> 
+    </main>
+</body>
+</html>
