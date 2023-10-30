@@ -10,40 +10,40 @@
     <h1>Jogo de Senha</h1>
     <main class="tela-principal">
         <section id="regras">
-                <p>Pressione o botão reset para iniciar um novo jogo.<br/>
-                    Escolha 4 de 6 cores diponíveis clicando nas lacunas,
-                    depois pressione verificar para testar a senha escolhida.<br/>
-                    Será apresentado os seguintes resultados:</p>
-                    <ul-->
-                        <li>Acertou a cor;</li>
-                        <li>Acertou a cor, mas a posição está errada;</li>
-                        <li>Errou a cor e suaposição</li>
-                    </ul-->
+            <p>Pressione o botão reset para iniciar um novo jogo.<br/>
+                Escolha 4 de 6 cores diponíveis clicando nas lacunas,
+                depois pressione verificar para testar a senha escolhida.<br/>
+                Será apresentado os seguintes resultados:
+            </p>
+            <ul-->
+                <li>Acertou a cor;</li>
+                <li>Acertou a cor, mas a posição está errada;</li>
+                <li>Errou a cor e suaposição</li>
+            </ul-->
         </section>
         <section id="game">
-            <div class="btn">
-                <button id="btnLimpar">Limpar</button>
-                <button id="btnVerificar">Verificar</button>
-            </div>
+            <button id="btnLimpar">Limpar</button>
+            <button id="btnVerificar" disabled>Verificar</button>
             <div id="senha-oculta">
                 <h3>Senha Oculta</h3>
                 <div id="gerado"> 
-                    <div class="bola"></div>
-                    <div class="bola"></div>
-                    <div class="bola"></div>
-                    <div class="bola"></div>
+                    <div class="senha bola" id="pos1"></div>
+                    <div class="senha bola" id="pos2"></div>
+                    <div class="senha bola" id="pos3"></div>
+                    <div class="senha bola" id="pos4"></div>
                 </div>
             </div>
             <div id="tentativas">
                 <h3>Tentativas</h3>
-                <div id="gerado">
-                    <div class="bola"></div>
-                    <div class="bola"></div>
-                    <div class="bola"></div>
-                    <div class="bola"></div>
+                <div id="tentado">
+                    <div class="resposta bola" id="ttv1"></div>
+                    <div class="resposta bola" id="ttv2"></div>
+                    <div class="resposta bola" id="ttv3"></div>
+                    <div class="resposta bola" id="ttv4"></div>
                 </div>
             </div>
         </section> 
     </main>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>
