@@ -31,15 +31,15 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 800px;
-    margin: auto;
+    width: 900px;
+    margin: 20px auto;
 }
 
 #game {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 80%;
+    width: 60%;
+    height: 90%;
     border: 2px inset #ddd;
 }
 
@@ -80,7 +80,7 @@ h1 {
     border: 2px solid #000;
     background: #000;
     border-radius: 50%;
-    margin: 0px 20px;
+    margin: 15px 10px;
 }
 
 #tentativas {
@@ -88,14 +88,16 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     border: 2px inset #ccc;
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
-#gerado, #tentado{
+#gerado, #tentado, #resultado{
     display: flex;
     flex-direction: row;
-    border: 1px solid #ddd;
-    padding: 5px;
+    justify-content:space-between;
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin: 10px;
 }
 
 .btn {
@@ -112,12 +114,22 @@ h1 {
     cursor: pointer;
 }
 
+#bntLimpar:disabled {
+    opacity: .4;
+    cursor: default;
+}
+
 #btnVerificar {
     background: cyan;
     margin: 10px auto;
     padding: 10px;
     border: 5px outset #ddd;
     cursor: pointer;
+}
+
+#btnVerificar:disabled {
+    opacity: .4;
+    cursor: default;
 }
 .red {
     background-color: red;

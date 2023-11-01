@@ -13,17 +13,16 @@
             <p>Pressione o botão reset para iniciar um novo jogo.<br/>
                 Escolha 4 de 6 cores diponíveis clicando nas lacunas,
                 depois pressione verificar para testar a senha escolhida.<br/>
-                Será apresentado os seguintes resultados:
+                Serão apresentados os seguintes resultados:
             </p>
             <ul-->
-                <li>Acertou a cor;</li>
-                <li>Acertou a cor, mas a posição está errada;</li>
-                <li>Errou a cor e suaposição</li>
+                <li>✅ Acertou a cor e sua posição;</li>
+                <li>☑️ Acertou a cor, mas a posição está errada;</li>
+                <li>❌ Errou a cor e sua posição</li>
             </ul-->
         </section>
         <section id="game">
             <button id="btnLimpar">Limpar</button>
-            <button id="btnVerificar" disabled>Verificar</button>
             <div id="senha-oculta">
                 <h3>Senha Oculta</h3>
                 <div id="gerado"> 
@@ -34,8 +33,18 @@
                 </div>
             </div>
             <div id="tentativas">
-                <h3>Tentativas</h3>
                 <div id="tentado">
+                    <div>
+                        <h3 id="chances">Tentativa n# </h3>
+                    </div>
+                    <div class="resposta bola" id="ttv1"></div>
+                    <div class="resposta bola" id="ttv2"></div>
+                    <div class="resposta bola" id="ttv3"></div>
+                    <div class="resposta bola" id="ttv4"></div>
+                    <button id="btnVerificar" disabled>Verificar</button>
+                </div>
+                <div id="resultado">
+                    <h3>Resultado</h3>
                     <div class="resposta bola" id="ttv1"></div>
                     <div class="resposta bola" id="ttv2"></div>
                     <div class="resposta bola" id="ttv3"></div>
