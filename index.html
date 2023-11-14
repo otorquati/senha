@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo de Senhas Coloridas</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css" media="screen">
 </head>
 <body>
     <h1>Jogo de Senha</h1>
-    <main class="tela-principal">
-        <section id="regras">
-            <p>Pressione o botão reset para iniciar um novo jogo.<br/>
-                Escolha 4 de 6 cores diponíveis clicando nas lacunas,
-                depois pressione verificar para testar a senha escolhida.<br/>
+    <main class="main-screen-container">
+        <section id="rules-container">
+            <h2>Regras do Jogo</h2>
+            <p>Pressione o botão <strong>LIMPAR</strong> para iniciar um novo jogo.<br/>
+                Escolha 4 de 6 cores diponíveis clicando nas lacunas <strong>TENTATIVAS</strong>,
+                depois pressione <strong>VERIFICAR</strong> para testar a senha escolhida.<br/>
                 Serão apresentados os seguintes resultados:
             </p>
             <ul-->
@@ -21,8 +23,8 @@
                 <li>❌ Errou a cor e sua posição</li>
             </ul-->
         </section>
-        <section id="game">
-            <button id="btnLimpar">Limpar</button>
+        <section id="game-container">
+            <button id="btnLimpar">Jogar</button>
             <div id="senha-oculta">
                 <h3>Senha Oculta</h3>
                 <div id="gerado"> 
@@ -35,21 +37,21 @@
             <div id="tentativas">
                 <div id="tentado">
                     <div>
-                        <h3 id="chances">Tentativa n# </h3>
+                        <p id="chances"><strong>Tentativa </br> n.</strong> </p>
                     </div>
                     <div class="resposta bola" id="ttv1"></div>
                     <div class="resposta bola" id="ttv2"></div>
                     <div class="resposta bola" id="ttv3"></div>
                     <div class="resposta bola" id="ttv4"></div>
-                    <button id="btnVerificar" disabled>Verificar</button>
                 </div>
                 <div id="resultado">
-                    <h3>Resultado</h3>
-                    <div class="resposta bola" id="ttv1"></div>
-                    <div class="resposta bola" id="ttv2"></div>
-                    <div class="resposta bola" id="ttv3"></div>
-                    <div class="resposta bola" id="ttv4"></div>
+                    <div id="resultOut"><h3>Resultado</h3></div>
+                    <div class="resultado bola" id="ttv1"></div>
+                    <div class="resultado bola" id="ttv2"></div>
+                    <div class="resultado bola" id="ttv3"></div>
+                    <div class="resultado bola" id="ttv4"></div>
                 </div>
+                <button id="btnVerificar" disabled>Verificar</button>
             </div>
         </section> 
     </main>

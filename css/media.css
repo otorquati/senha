@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* Definição das media queries do jogo */
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    /* Mobile */ 
+       .main-screen-container {
+            display: block;
+            flex-direction: row;
+            justify-content: center;
+            width: 90vw;
+            margin: 10px auto;
+        }
+    
+        #rules-container {
+            width: 95%;
+            margin: 10px auto;
+            padding: 10px;
+            color: var(--cor03);
+            border: 2px inset #ddd;
+        }
+
+        #game-container {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px auto;
+            padding: 10px;
+            border: 2px inset #ddd;
+        }
+    
+    }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Tablet */ 
+        .main-screen-container {
+            display: block;
+            flex-direction: row;
+            justify-content: center;
+            width: 90vw;
+            margin: 20px auto;
+        }
+    
+        #rules-container {
+            width: 95%;
+            margin: 10px auto;
+            padding: 10px;
+            color: var(--cor03);
+            border: 2px inset #ddd;
+        }
+
+        #game-container {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px auto;
+            padding: 10px;
+            border: 2px inset #ddd;
+        }
+    
+    }
+
+@media screen and (min-width: 992px) {
+    /* Desktop */ 
+        .main-screen-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 900px;
+            margin: 20px auto;
+        }
+    
+        #rules-container {
+            width: 40%;
+            margin: 0px 20px;
+            padding: 10px;
+            color: var(--cor03);
+            border: 2px inset #ddd;
+        }
+
+        #game-container {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: 2px inset #ddd;
+        }
+    
+    }
